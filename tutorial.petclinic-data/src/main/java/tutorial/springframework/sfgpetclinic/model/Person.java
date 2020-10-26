@@ -1,10 +1,9 @@
 package tutorial.springframework.sfgpetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
 	
 	private String firstName;
 	private String lastName;
-	private Long id;
 	
 	public String getFirstName() {
 		return firstName;
@@ -20,11 +19,5 @@ public class Person {
 	}
 
 
-	public Long getId() {
-		return this.id;
-	}
 
-    public void setId(Long id) {
-		this.id = id;
-    }
 }
