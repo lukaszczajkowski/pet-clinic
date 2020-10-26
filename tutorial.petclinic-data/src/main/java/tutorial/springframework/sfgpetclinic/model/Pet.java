@@ -2,7 +2,7 @@ package tutorial.springframework.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends BaseEntity{
 	
 	private PetType petType;
 	private Owner owner;
@@ -28,8 +28,4 @@ public class Pet {
 		this.birthDate = birthDate;
 	}
 
-
-	public Long getId() {
-		return this.id;
-	}
 }
